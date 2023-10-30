@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>String Processor</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="min-h-screen flex flex-col justify-center items-center md:flex-row space-y-4 md:space-x-4"
+    >
+      <div class="md:w-1/2 p-6 space-y-4 max-w-md w-full bg-white rounded-lg">
+        <h1 class="text-2xl text-center text-blue-500">String Processor</h1>
+        <input
+          id="inputString"
+          type="text"
+          class="border border-blue-500 rounded p-2 w-full"
+          placeholder="Enter a string"
+        />
+        <button
+          id="processButton"
+          class="bg-blue-500 text-white rounded p-2 w-full hover:bg-blue-700"
+        >
+          Process
+        </button>
+        <h2 class="text-lg text-gray-700">UPPERCASE Version:</h2>
+        <p
+          id="upperCaseOutput"
+          class="border border-gray-300 rounded p-4 min-w-full min-h-20 bg-gray-100"
+          placeholder="Result"
+        ></p>
+        <h2 class="text-lg text-gray-700">AlTeRnAtEcAsE Version:</h2>
+        <p
+          id="alternatingCaseOutput"
+          class="border border-gray-300 rounded p-4 min-w-full min-h-20 bg-gray-100"
+          placeholder="Result"
+        ></p>
+        <h2 class="text-lg text-gray-700">CSV File Path:</h2>
+        <p
+          id="csvFilePath"
+          class="border border-gray-300 rounded p-4 min-w-full min-h-20 bg-gray-100"
+          placeholder="Result"
+        ></p>
+      </div>
+      <div class="md:w-1/2 p-6 space-y-4 max-w-md w-full bg-white rounded-lg">
+        <h2 class="text-2xl text-center text-blue-500">History Input</h2>
+        <ul
+          id="historyList"
+          class="border border-gray-300 rounded p-4 max-h-36 overflow-y-auto"
+        ></ul>
+      </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
